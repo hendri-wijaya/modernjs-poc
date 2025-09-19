@@ -25,9 +25,11 @@
   },
   "dependencies": {
     "@modern-js/runtime": "2.68.12",
+    "@module-federation/modern-js": "^0.19.1",
+    "@module-federation/sdk": "^0.19.1",
     "@types/react-router-dom": "^5.3.3",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
     "react-router-dom": "^7.9.1"
   },
   "devDependencies": {

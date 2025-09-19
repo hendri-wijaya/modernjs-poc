@@ -1,18 +1,20 @@
+// modern.config.ts
 import { appTools, defineConfig } from '@modern-js/app-tools';
+import moduleFederationPlugin from '@module-federation/modern-js';
 
-// https://modernjs.dev/en/configure/app/usage
 export default defineConfig({
   runtime: {
     router: true,
   },
   source: {
     entries: {
-      main: './src/mfe/Login.tsx',
+      main: './src/mfe/index.tsx',
     },
   },
   plugins: [
     appTools({
-      bundler: 'rspack', // Set to 'webpack' to enable webpack
+      bundler: 'webpack',
     }),
+    moduleFederationPlugin(), // <-- tells Modern.js to use module-federation.config.ts
   ],
 });
