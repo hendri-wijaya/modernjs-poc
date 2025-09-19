@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
 import RedirectButton from './RedirectButton';
 import RemoteAuth from './RemoteAuth';
 
@@ -18,7 +17,6 @@ const App = () => {
       ) : (
         <RedirectButton />
       )}
-      <Outlet />
     </div>
   );
 };
